@@ -81,7 +81,22 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
-.task-added-prompt>p {
+.task-deleted-prompt {
+    z-index: 10;
+    display: none;
+    background-color: rgb(134, 48, 48, 0.2);
+    border: 1px solid #863030;
+    border-radius: 25px;
+    width: 25%;
+    padding: 5em;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prompt>p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
@@ -89,13 +104,13 @@ button:hover {
     align-content: center;
 }
 
-.task-added-prompt>.icon {
+.prompt>.icon {
     position: absolute;
     right: 13px;
     bottom: 180px;
 }
 
-.task-added-prompt .icon>.fa-xmark:hover {
+.prompt .icon>.fa-xmark:hover {
     color: #863030;
     cursor: pointer;
 }
