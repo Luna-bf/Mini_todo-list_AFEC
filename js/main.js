@@ -3,6 +3,7 @@ let btn1 = document.querySelector(".ajouter");
 let taskadded = document.querySelector(".task-added-prompt");
 let taskparagraphe = document.createElement('p');
 let btn2 = document.querySelector('.supprimer');
+
 btn1.addEventListener("click", ajouter);
 btn2.addEventListener("click", supprimer);
 
@@ -13,12 +14,12 @@ function ajouter() {
     else {
 
 
-        taskadded.prepend(taskparagraphe);
+        taskadded.append(taskparagraphe);
         taskadded.style.display = "block";
         taskparagraphe.textContent = `tache : "${input.value}" ajouté avec succès !`;
-        input.value = '';
 
     }
+        input.value = '';
 
 
 }

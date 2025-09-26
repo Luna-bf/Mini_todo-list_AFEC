@@ -10,11 +10,11 @@ section {
     align-items: center;
 }
 
-form {
+.form-div {
     margin-top: 4em;
 }
 
-input {
+.input {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F5F5F5;
     border: 1px solid #F5F5F5;
@@ -22,7 +22,7 @@ input {
     border-radius: 25px;
 }
 
-input::placeholder {
+.input::placeholder {
     color: rgb(34, 139, 34, 2.9);
 }
 
@@ -62,12 +62,7 @@ button:hover {
     margin-left: 20px;
 }
 
-.prompt {
-    background-color: #fff;
-    border: 1px solid #000;
-}
-
-#task-added-prompt {
+.task-added-prompt {
     display: none;
     background-color: rgb(34, 139, 34, 0.2);
     border: 1px solid #2E6F40;
@@ -76,18 +71,18 @@ button:hover {
     width: 25%;
 }
 
-#task-added-prompt>p {
+.task-added-prompt>p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
-#task-added-prompt>.icon {
+.task-added-prompt>.icon {
     position: absolute;
     left: 385px;
     bottom: 465px;
 }
 
-#task-added-prompt .icon>.fa-xmark:hover {
+.task-added-prompt .icon>.fa-xmark:hover {
     color: #863030;
     cursor: pointer;
 }
