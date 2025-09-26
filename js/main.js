@@ -1,41 +1,31 @@
-// DOM ELEMENTS
-const input = document.getElementById('write-task');
-const addTaskBtn = document.getElementById('add-task');
-const taskAddedPrompt = document.getElementById('task-added-prompt');
-const taskParagraph = document.createElement('p');
-const deleteTaskBtn = document.getElementById('delete-task');
+let input = document.querySelector(".input");
+let btn1 = document.querySelector(".ajouter");
+let taskadded = document.querySelector(".task-added-prompt");
+let taskparagraphe = document.createElement('p');
+let btn2 = document.querySelector('.supprimer');
+btn1.addEventListener("click", ajouter);
+btn2.addEventListener("click", supprimer);
 
-
-// EVENT LISTENERS
-addTaskBtn.addEventListener('click', (e) => {
-
-    e.preventDefault();
-    taskAdded();
-});
-
-deleteTaskBtn.addEventListener('click', (e) => {
-
-    e.preventDefault();
-    taskDeletion();
-});
-
-
-// FUNCTIONS
-function taskAdded() {
-
-    // Si la valeur de l'input est vide, j'affiche ce message :
+function ajouter() {
     if (!input.value) {
-        console.log("Veuillez entrer une tâche.");
-    } else {
-        taskAddedPrompt.append(taskParagraph);
-        /*
-        La syntaxe ${} permet d'insérer dynamiquement une valeur, ici, la valeur de l'élément input.
-        Cette syntaxe s'utilise uniquement pour les valeurs présentes entre les backtics (`...`)
-        */
-        taskParagraph.textContent = `Tâche : "${input.value}" ajoutée avec succès !`;
+        console.log("veuillez entrer une tâche .");
+    }
+    else {
 
-        taskAddedPrompt.style.display = 'block';
-        
+
+        taskadded.prepend(taskparagraphe);
+        taskadded.style.display = "block";
+        taskparagraphe.textContent = `tache : "${input.value}" ajouté avec succès !`;
         input.value = '';
+
+    }
+
+
+}
+
+function supprimer() {
+    if(!taskparagraphe.value){
+        taskparagraphe.style.display ="none";
+        taskadded.style.display ="none";
     }
 }
