@@ -87,8 +87,7 @@ button:hover {
     bottom: 465px;
 }
 
-#task-added-prompt> {
-    position: absolute;
-    left: 385px;
-    bottom: 465px;
+#task-added-prompt .icon>.fa-xmark:hover {
+    color: #863030;
+    cursor: pointer;
 }
