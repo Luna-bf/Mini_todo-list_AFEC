@@ -11,9 +11,11 @@
 </head>
 
 <body>
-    <h1>Mini todo list - Projet AFEC</h1>
+    <div id="blur"></div>
 
     <section>
+        <h1>Mini todo list - Projet AFEC</h1>
+
         <div class="form-div">
             <input type="text" placeholder="Entrez votre tâche ici svp" class="input">
             <button class="ajouter" id="add-task">Ajouter la tâche</button>
@@ -21,20 +23,22 @@
 
         <ul>
             <li>
-                <input type="checkbox" name="Task1" id="task1">
+                <input type="checkbox" name="Task1" class="check" id="task1">
                 <label for="task1">Tâche 1</label>
                 <button class="supprimer" id="delete-task">Supprimer la tâche</button>
             </li>
 
             <li>
-                <input type="checkbox" name="Task2" id="task2" checked>
+                <input type="checkbox" name="Task2" id="task2" class="check" checked>
                 <label for="task2" class="line">Tâche 2</label>
                 <button class="supprimer">Supprimer la tâche</button>
             </li>
         </ul>
     </section>
 
-    <div class="task-added-prompt"><div class="icon"><i class="fa-solid fa-xmark" id="prompt-x"></i></div></div>
+    <div class="task-added-prompt">
+        <div class="icon"><i class="fa-solid fa-xmark" id="prompt-x"></i></div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

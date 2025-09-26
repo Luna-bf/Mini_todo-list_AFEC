@@ -23,7 +23,15 @@ section {
 }
 
 .input::placeholder {
-    color: rgb(34, 139, 34, 2.9);
+    color: rgb(34, 139, 34, 0.4);
+}
+
+input.check {
+    accent-color: rgb(34, 139, 34, 0.4);
+}
+
+input.check[type="checkbox"]:checked + label {
+    text-decoration: line-through;
 }
 
 ul {
@@ -34,10 +42,6 @@ ul {
 ul>li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 15px;
-}
-
-.line {
-    text-decoration: line-through;
 }
 
 button {
@@ -63,26 +67,46 @@ button:hover {
 }
 
 .task-added-prompt {
+    z-index: 10;
     display: none;
     background-color: rgb(34, 139, 34, 0.2);
     border: 1px solid #2E6F40;
     border-radius: 25px;
-    padding: 50px 15px 50px 15px;
     width: 25%;
+    padding: 5em;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .task-added-prompt>p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .task-added-prompt>.icon {
     position: absolute;
-    left: 385px;
-    bottom: 465px;
+    right: 13px;
+    bottom: 180px;
 }
 
 .task-added-prompt .icon>.fa-xmark:hover {
     color: #863030;
     cursor: pointer;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
 }

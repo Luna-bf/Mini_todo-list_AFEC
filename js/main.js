@@ -4,6 +4,7 @@ let taskadded = document.querySelector(".task-added-prompt");
 let taskparagraphe = document.createElement('p');
 let btn2 = document.querySelector('.supprimer');
 let promptX = document.getElementById('prompt-x');
+let bgBlur = document.getElementById('blur');
 
 btn1.addEventListener("click", ajouter);
 btn2.addEventListener("click", supprimer);
@@ -18,17 +19,17 @@ function ajouter() {
         taskadded.append(taskparagraphe);
         taskadded.style.display = "block";
         taskparagraphe.textContent = `Tâche : "${input.value}" ajouté avec succès !`;
-        
+        bgBlur.classList.add('blur');
 
     }
-        input.value = '';
+    input.value = '';
 
 
 }
 
 function supprimer() {
-    if(!taskparagraphe.value){
-       
+    if (!taskparagraphe.value) {
+
         alert("tache supprimer avec succès !");
     }
 }
@@ -36,4 +37,5 @@ function supprimer() {
 promptX.addEventListener('click', () => {
 
     taskadded.style.display = 'none';
+    bgBlur.classList.remove('blur');
 });
