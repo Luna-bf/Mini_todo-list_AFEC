@@ -18,7 +18,7 @@ function ajouter() {
 
         taskadded.append(taskparagraphe);
         taskadded.style.display = "block";
-        taskparagraphe.textContent = `Tâche : "${input.value}" ajouté avec succès !`;
+        taskparagraphe.textContent = `Tâche : "${input.value}" ajoutée avec succès !`;
         bgBlur.classList.add('blur');
 
     }
