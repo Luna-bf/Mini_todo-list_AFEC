@@ -81,6 +81,14 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
+.task-added-prompt>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .task-deleted-prompt {
     z-index: 10;
     display: none;
@@ -104,13 +112,13 @@ button:hover {
     align-content: center;
 }
 
-.prompt>.icon {
+.icon {
     position: absolute;
     right: 13px;
     bottom: 180px;
 }
 
-.prompt .icon>.fa-xmark:hover {
+.icon>.fa-xmark:hover {
     color: #863030;
     cursor: pointer;
 }
