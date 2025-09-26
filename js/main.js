@@ -17,6 +17,7 @@ function ajouter() {
         taskadded.append(taskparagraphe);
         taskadded.style.display = "block";
         taskparagraphe.textContent = `tache : "${input.value}" ajouté avec succès !`;
+        
 
     }
         input.value = '';
@@ -28,5 +29,6 @@ function supprimer() {
     if(!taskparagraphe.value){
         taskparagraphe.style.display ="none";
         taskadded.style.display ="none";
+        alert("tache supprimer avec succès !");
     }
 }
