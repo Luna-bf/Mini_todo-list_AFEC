@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini todo list</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="favicon" href="#">
+</head>
+
+<body>
+    <h1>Mini todo list - Projet AFEC</h1>
+
+    <section>
+        <form>
+            <input type="text" placeholder="Entrez votre tâche ici svp" id="write-task">
+            <button class="ajouter" id="add-task">Ajouter la tâche</button>
+        </form>
+
+        <ul>
+            <li>
+                <input type="checkbox" name="Task1" id="task1">
+                <label for="task1">Tâche 1</label>
+                <button class="supprimer" id="delete-task">Supprimer la tâche</button>
+            </li>
+
+            <li>
+                <input type="checkbox" name="Task2" id="task2" checked>
+                <label for="task2" class="line">Tâche 2</label>
+                <button class="supprimer">Supprimer la tâche</button>
+            </li>
+        </ul>
+    </section>
+
+    <div id="task-added-prompt" class="prompt"><div class="icon"><i class="fa-solid fa-xmark"></i></div></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
