@@ -39,8 +39,3 @@ function taskAdded() {
         input.value = '';
     }
 }
-
-function taskDeletion() {
-
-
-}
