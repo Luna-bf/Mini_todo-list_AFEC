@@ -27,8 +27,7 @@ function ajouter() {
 
 function supprimer() {
     if(!taskparagraphe.value){
-        taskparagraphe.style.display ="none";
-        taskadded.style.display ="none";
+       
         alert("tache supprimer avec succès !");
     }
 }
