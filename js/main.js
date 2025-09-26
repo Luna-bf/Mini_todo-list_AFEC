@@ -16,7 +16,7 @@ function ajouter() {
 
         taskadded.append(taskparagraphe);
         taskadded.style.display = "block";
-        taskparagraphe.textContent = `tache : "${input.value}" ajouté avec succès !`;
+        taskparagraphe.textContent = `Tâche : "${input.value}" ajouté avec succès !`;
         
 
     }
